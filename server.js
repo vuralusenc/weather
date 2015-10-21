@@ -12,7 +12,7 @@ app.get('/yahoo',function(req,res){
 	request(url,function(error,response,html){
 		
 		var title,sehir;
-		var baslik;
+		var baslik,a1;
 
 		if(!error){
 			var $ = cheerio.load(html);
